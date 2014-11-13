@@ -37,7 +37,7 @@ public class TestSpringRestExample {
 	private static void testCreateEmployee() {
 		RestTemplate restTemplate = new RestTemplate();
 		Employee emp = new Employee();
-		emp.setId(1);emp.setName("Pankaj Kumar");
+		emp.setId(1);emp.setName("Cheehong");
 		Employee response = restTemplate.postForObject(SERVER_URI+EmployeeController.CREATE_EMP, emp, Employee.class);
 		printEmpData(response);
 	}
